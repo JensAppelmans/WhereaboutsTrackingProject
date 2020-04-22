@@ -7,13 +7,13 @@ namespace Whereabouts.DAL.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.0")]
-    public sealed partial class SeedDatabase : IMigrationMetadata
+    public sealed partial class Initial : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(SeedDatabase));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
         
         string IMigrationMetadata.Id
         {
-            get { return "202004171227529_SeedDatabase"; }
+            get { return "202004221548013_Initial"; }
         }
         
         string IMigrationMetadata.Source

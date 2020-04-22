@@ -3,7 +3,7 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class IdentityTables : DbMigration
+    public partial class Intial : DbMigration
     {
         public override void Up()
         {

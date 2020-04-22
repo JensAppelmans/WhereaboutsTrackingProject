@@ -12,7 +12,7 @@ using Whereabouts.API.Models;
 
 namespace Whereabouts.API.Controllers
 {
-    
+    [Authorize]
     public class CustomersController : ApiController
     {
         private readonly IUnitOfWork _work;

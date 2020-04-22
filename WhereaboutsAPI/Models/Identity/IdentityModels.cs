@@ -24,7 +24,7 @@ namespace Whereabouts.API.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("Appelfleet", throwIfV1Schema: false)
+            : base("IdentityConnection", throwIfV1Schema: false)
         {
         }
 

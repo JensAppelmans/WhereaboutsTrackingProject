@@ -168,9 +168,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="MappingProfile.cs" />
-    <Compile Include="Migrations\202004220905583_IdentityTables.cs" />
-    <Compile Include="Migrations\202004220905583_IdentityTables.designer.cs">
-      <DependentUpon>202004220905583_IdentityTables.cs</DependentUpon>
+    <Compile Include="Migrations\202004221450261_Intial.cs" />
+    <Compile Include="Migrations\202004221450261_Intial.designer.cs">
+      <DependentUpon>202004221450261_Intial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -210,8 +210,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004220905583_IdentityTables.resx">
-      <DependentUpon>202004220905583_IdentityTables.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004221450261_Intial.resx">
+      <DependentUpon>202004221450261_Intial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

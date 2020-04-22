@@ -79,13 +79,13 @@
     <Compile Include="EnityConfigurations\TrackerConfiguration.cs" />
     <Compile Include="EnityConfigurations\TrackerTypeConfiguration.cs" />
     <Compile Include="EnityConfigurations\VehicleConfiguration.cs" />
-    <Compile Include="Migrations\202004171226472_Initial.cs" />
-    <Compile Include="Migrations\202004171226472_Initial.designer.cs">
-      <DependentUpon>202004171226472_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\202004221548013_Initial.cs" />
+    <Compile Include="Migrations\202004221548013_Initial.designer.cs">
+      <DependentUpon>202004221548013_Initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202004171227529_SeedDatabase.cs" />
-    <Compile Include="Migrations\202004171227529_SeedDatabase.designer.cs">
-      <DependentUpon>202004171227529_SeedDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\202004222044285_SeedDatabase.cs" />
+    <Compile Include="Migrations\202004222044285_SeedDatabase.designer.cs">
+      <DependentUpon>202004222044285_SeedDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\DatabaseContext.cs" />
@@ -109,11 +109,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202004171226472_Initial.resx">
-      <DependentUpon>202004171226472_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004221548013_Initial.resx">
+      <DependentUpon>202004221548013_Initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202004171227529_SeedDatabase.resx">
-      <DependentUpon>202004171227529_SeedDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202004222044285_SeedDatabase.resx">
+      <DependentUpon>202004222044285_SeedDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -17,10 +17,10 @@
         protected override void Seed(Whereabouts.DAL.Migrations.DatabaseContext context)
         {
             context.Vehicles.AddOrUpdate(v => v.VehicleId,
-                 new Vehicle() { VehicleId = 1, Name = "Auto" },
-                 new Vehicle() { VehicleId = 2, Name = "Bestelwagen" },
-                 new Vehicle() { VehicleId = 3, Name = "Vrachtwagen" }
-                 );
+                   new Vehicle() { VehicleId = 1, Name = "Auto" },
+                   new Vehicle() { VehicleId = 2, Name = "Bestelwagen" },
+                   new Vehicle() { VehicleId = 3, Name = "Vrachtwagen" }
+                   );
 
             context.TrackerTypes.AddOrUpdate(tm => tm.TrackerTypeId,
                  new TrackerType() { TrackerTypeId = 1, Name = "AVL" },
@@ -32,7 +32,7 @@
             context.Customers.AddOrUpdate(c => c.CustomerId,
                 new Customer()
                 {
-                    CustomerId = 1,
+                    CustomerId = "b82ba79f - 7431 - 4ff2 - af80 - be8e062c1e4f",
                     Name = "Jens Appelmans",
                     Phonenumber = "0478093406",
                     Email = "jens.appelmans@gmail.com",
@@ -43,7 +43,7 @@
                 },
                 new Customer()
                 {
-                    CustomerId = 2,
+                    CustomerId = "ca0a20c7 - 11ee - 4d3e-a36b - 37f9023dab9a",
                     Name = "Préscillia Haegeman",
                     Phonenumber = "0412784585",
                     Email = "Precillia.haegeman@gmail.com",
@@ -53,7 +53,7 @@
                 },
                 new Customer()
                 {
-                    CustomerId = 3,
+                    CustomerId = "383baa53 - 36df - 46a3 - b3f5 - 456efb500718",
                     Name = "Sven Paeleman",
                     Phonenumber = "+3245781254",
                     Email = "sven@geotracer.be",

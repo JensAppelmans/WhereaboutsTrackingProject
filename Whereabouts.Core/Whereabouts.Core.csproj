@@ -42,7 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Adress.cs" />
-    <Compile Include="Models\ApplicationUser.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\TrackedItem.cs" />
     <Compile Include="Models\Tracker.cs" />

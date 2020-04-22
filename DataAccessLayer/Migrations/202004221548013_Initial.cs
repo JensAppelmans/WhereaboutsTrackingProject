@@ -16,7 +16,7 @@
                         City = c.String(nullable: false, maxLength: 50),
                         Street = c.String(nullable: false, maxLength: 50),
                         Zipcode = c.String(nullable: false, maxLength: 10),
-                        Customer_CustomerId = c.Int(nullable: false),
+                        Customer_CustomerId = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.AdressId)
                 .ForeignKey("dbo.Customers", t => t.Customer_CustomerId, cascadeDelete: true)
@@ -26,12 +26,13 @@
                 "dbo.Customers",
                 c => new
                     {
-                        CustomerId = c.Int(nullable: false, identity: true),
+                        CustomerId = c.String(nullable: false, maxLength: 128),
                         Name = c.String(nullable: false, maxLength: 50),
                         Phonenumber = c.String(nullable: false, maxLength: 50),
                         Email = c.String(nullable: false, maxLength: 50),
                         Company = c.String(maxLength: 50),
                         Btw = c.String(maxLength: 50),
+                        DateCreated = c.DateTime(nullable: false, precision: 7, storeType: "datetime2"),
                     })
                 .PrimaryKey(t => t.CustomerId);
             
@@ -45,7 +46,7 @@
                         Brand = c.String(maxLength: 50),
                         ChassisNumber = c.String(nullable: false, maxLength: 50),
                         VehicleId = c.Int(nullable: false),
-                        Customer_CustomerId = c.Int(nullable: false),
+                        Customer_CustomerId = c.String(nullable: false, maxLength: 128),
                     })
                 .PrimaryKey(t => t.TrackedItemId)
                 .ForeignKey("dbo.Vehicles", t => t.VehicleId, cascadeDelete: true)
